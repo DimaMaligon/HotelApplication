@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HotelApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.HotelApplication" parent="Base.Theme.HotelApplication">
+        <item name="android:textViewStyle">@style/fontTextView</item>
+        <item name="chipStyle">@style/customChip</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/primary_on_color</item>
+        <item name="textInputStyle">@style/customTextInputStyle</item>
+    </style>
+
+        />
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customTextView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+        <item name="android:background">@color/tertiary</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="customChip" parent="ShapeAppearanceOverlay.Material3.Chip">
+        <item name="chipCornerRadius">5dp</item>
+        <item name="chipBackgroundColor">@color/secondary_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/secondary_on_color</item>
+    </style>
+
+    <style name="fontTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="font">@font/sf_pro_display</item>
+    </style>
+
+    <style name="customTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundColor">@color/secondary_color</item>
+        <item name="hintTextColor">@color/secondary_on_color</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="buttonFilled" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/error_color</item>
+        <item name="strokeColor">@color/error_color</item>
+        <item name="android:background">@color/error_color</item>
+        <item name="android:backgroundTint">@color/error_color</item>
+    </style>
+
+</resources>

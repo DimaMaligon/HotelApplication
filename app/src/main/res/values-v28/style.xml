@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonFilled" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:buttonCornerRadius">2dp</item>
+    </style>
+</resources>

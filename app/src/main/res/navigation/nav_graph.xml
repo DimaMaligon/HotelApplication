@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainHotel">
+
+    <fragment
+        android:id="@+id/mainHotel"
+        android:name="com.example.hotelapplication.screens.mainhotel.MainHotel"
+        android:label="Отель"
+        tools:layout="@layout/fragment_main_hotel">
+        <action
+            android:id="@+id/action_mainHotel_to_roomHotel"
+            app:destination="@id/roomHotel" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomHotel"
+        android:name="com.example.hotelapplication.screens.room.RoomHotel"
+        android:label="fragment_room_hotel"
+        tools:layout="@layout/fragment_room_hotel" >
+        <action
+            android:id="@+id/action_roomHotel_to_orderRoom"
+            app:destination="@id/orderRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderRoom"
+        android:name="com.example.hotelapplication.screens.orderroom.OrderRoom"
+        android:label="Бронирование"
+        tools:layout="@layout/fragment_order_room">
+        <action
+            android:id="@+id/action_orderRoom_to_paymentOrder"
+            app:destination="@id/paymentOrder" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentOrder"
+        android:name="com.example.hotelapplication.screens.paymentorder.PaymentOrder"
+        android:label="Заказ оплачен"
+        tools:layout="@layout/fragment_payment_order" >
+        <action
+            android:id="@+id/action_paymentOrder_to_mainHotel"
+            app:destination="@id/mainHotel" />
+    </fragment>
+</navigation>
